@@ -1,0 +1,88 @@
+{
+  "name": "ᴊᴏᴇʟ xᴍᴅ ʙᴏᴛ",
+  "description": "ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ʙʏ ʟᴏʀ ᴊᴏᴇʟ",
+  "logo": "https://files.catbox.moe/sgld88.jpg",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+    "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true,
+      "value": ""
+    },  
+    
+    "AUTO_READ_STATUS": {
+      "description": "make it true if you want joel md  bot to view status.",
+      "required": true,
+      "value": "true"
+    },
+
+    "MODE": {
+      "description": "make it public or private bot",
+      "required": true,
+      "value": "public"
+    }, 
+   
+      
+    "AUTO_TYPING": {
+      "description": "make it true to enable auto typing",
+      "required": false,
+      "value": ""
+    }, 
+  
+        
+    "AUTO_STICKER": {
+      "description": "make it true to enable auto sticker or false to do not",
+      "required": true,
+      "value": "true"
+    }, 
+    
+    "ALWAYS_ONLINE": {
+      "description": "make it true  to change your wapresence into available...",
+      "required": false,
+      "value": "true"
+    }, 
+
+    "READ_MESSAGE": {
+      "description": "make it true  to read messages",
+      "required": false,
+      "value": "false"
+    }, 
+
+    "ANTI_VV": {
+      "description": "make it true  to activate ant view once",
+      "required": false,
+      "value": "true"
+    },
+
+    "AUTO_REACT": {
+      "description": "make it true  to react on messages",
+      "required": false,
+      "value": "false"
+    }, 
+
+    "PREFIX": {
+      "description": " set your bot prefix",
+      "required": true,
+      "value": "."
+    }, 
+
+    
+    "ANTI_LINK": {
+      "description": "make it true  to auto delete links in groups",
+      "required": true,
+      "value": "true"
+    }
+    
+
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
